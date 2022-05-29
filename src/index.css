@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;500&family=League+Spartan:wght@400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html{
+    scroll-behavior: smooth;
+   
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+li{
+    transition: .3s;
 }
+.Hero{
+    filter: blur(5px);
+}
+.myimage{
+    filter: brightness(50%);
+    transition:.3s
+}
+.myimage:hover{
+    filter: none;
+}
+
+.image{
+    width: 120%;
+}
+.tech ul li {
+    list-style-type: "🚀 ";
+}
+.GridItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gridContainer{
+    margin-top: 1em;
+}
+
+
