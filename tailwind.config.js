@@ -7,7 +7,8 @@ module.exports = {
     fontFamily: {
       'league': ['League Spartan', 'sans-serif'],
       'fira': ['Fira Code', 'monospace'], // Ensure fonts with spaces have " " surrounding it.
-      'inter': ['Inter', 'sans-serif']
+      'inter': ['Inter', 'sans-serif'],
+      'poppin': ['Poppins', 'sans-serif']
     },
     colors: {
       'green' : '#65FFBE',
