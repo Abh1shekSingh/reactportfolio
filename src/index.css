@@ -4,7 +4,10 @@
 @tailwind utilities;
 html{
     scroll-behavior: smooth;
-   
+}
+
+html.disable-scroll{
+    overflow: hidden;
 }
 
 li{
