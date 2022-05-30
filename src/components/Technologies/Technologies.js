@@ -11,7 +11,7 @@ const Technologies = () => {
            <span className='flex w-40 h-1 my-6 bg-green border-2 border-green'></span>
         </div>
         <div className='md:w-1/2'>
-          <p className="text-white opacity-75 font-inter text-lg md:text-xl">
+          <p className="text-white opacity-75 font-inter text-lg md:text-lg">
             Started with some basics of HTML and CSS, now I have been 
             working with some modern technologies to build my websites.
           </p>

@@ -14,16 +14,16 @@ const Header = ({navbar, setNavbar}) => {
             <img src={logo} alt='logo' className='w-12 md:w-16'></img>
           </div>
           <div className='md:block hidden' >
-              <ul className='font-fira font-medium flex text-white gap-12'>
-                  <a href='#about'><li className='hover:text-green'>About</li></a>
+              <ul className='font-fira text-sm font-medium flex text-white gap-12'>
+                  <a href='#about'><li className='hover:text-green'> About</li></a>
                   <a href="#projects"><li className='hover:text-green'>Projects</li></a>
-                  <a href="#contact"><li className='hover:text-green'>Contact</li></a>
+                  <a href="#contact"><li className='hover:text-green'>Contact </li></a>
               </ul>
           </div>
           <div className='z-10 relative text-white md:hidden'>
               <GiHamburgerMenu onClick={handleClick} className='text-2xl' />
               <div className={`shadow-xl bg-green w-44 h-72 absolute right-6 top-8 flex justify-center items-center ${navbar ? 'visible' :'hidden'}`}>
-                <ul className='font-inter font-semibold flex flex-col gap-8'>
+                <ul className='font-inter  font-semibold flex flex-col gap-8'>
                 <a href='#about'><li>About</li></a>
                   <a href="#projects"><li>Projects</li></a>
                   <a href="#contact"><li>Contact</li></a>

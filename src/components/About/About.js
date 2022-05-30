@@ -1,6 +1,6 @@
 import React from 'react'
 import {FaInstagram, FaGithub, FaLinkedin} from "react-icons/fa"
-import me from "../../assets/images/mee.png"
+import me from "../../assets/images/Me.png"
 const About = () => {
   return (
     <div id="about" className='container md:mx-auto pt-24 py-10 px-7 md:px-48 md:mt-24'>
@@ -13,7 +13,7 @@ const About = () => {
               <FaLinkedin className='text-2xl text-white' />
           </div>
           <div className='md:flex  md:gap-6 mx-auto pt-4'>
-             <p className='opacity-75 pt-6 md:w-1/2 text-subtext mx-auto text-md font-inter text-lg text-white leading-relaxed md:text-xl'>
+             <p className='text-white opacity-80 pt-6 md:w-1/2  mx-auto text-md font-inter text-white leading-relaxed md:text-lg'>
                 Hello! My name is <span >Abhishek Singh</span>, I&apos;m 20 years old passionate web developer,
                 based in India. I started coding back in my high school. My interest in 
                 web developement came back in 2020.

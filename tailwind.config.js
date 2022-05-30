@@ -14,7 +14,8 @@ module.exports = {
       'dark' : '#1d1d1d',
       'white' : '#fff',
       'orange' : "#ffdc00",
-      'subtext' : "#fdfdfd"
+      'subtext' : "#fdfdfd",
+      'light': "#BDE6F1"
     }
   },
   plugins: [],

@@ -14,11 +14,11 @@ li{
     filter: blur(5px);
 }
 .myimage{
-    filter: brightness(50%);
+    filter: grayscale(90%);
     transition:.3s
 }
 .myimage:hover{
-    filter: none;
+    filter: grayscale(0);
 }
 
 .image{
