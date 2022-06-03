@@ -8,7 +8,8 @@ module.exports = {
       'league': ['League Spartan', 'sans-serif'],
       'fira': ['Fira Code', 'monospace'], // Ensure fonts with spaces have " " surrounding it.
       'inter': ['Inter', 'sans-serif'],
-      'poppin': ['Poppins', 'sans-serif']
+      'poppin': ['Poppins', 'sans-serif'],
+      'mono':['Jetbrains Mono','monospace']
     },
     colors: {
       'green' : '#65FFBE',

@@ -43,17 +43,17 @@ export const projects = [
 export const technologies = [
     {
         phase: "Front-End",
-        logo: <FaReact className="text-2xl" />,
+        logo: <FaReact className="text-2xl text-dark" />,
         description: "I ❤️ carving my frontend using React itself along with tailwind CSS. Sometimes, I also use Material UI to render clean components."
     },
     {
         phase: "Back-End",
-        logo: <FaNodeJs className="text-2xl" />,
+        logo: <FaNodeJs className="text-2xl text-dark" />,
         description: "Experience with NodeJS for managing the backend of applications. Manage database with help of mongo DB / firebase."
     },
     {
         phase: "Designing",
-        logo: <FaFigma className="text-2xl" />,
+        logo: <FaFigma className="text-2xl text-dark" />,
         description: "Before developing my web apps, I ❤️ to design them first, for that I use figma tool."
     }
 ]

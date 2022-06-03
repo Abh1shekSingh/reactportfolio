@@ -1,19 +1,45 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import {FaInstagram, FaGithub, FaLinkedin} from "react-icons/fa"
 import me from "../../assets/images/Me.png"
+import { motion } from 'framer-motion'
+
 const About = () => {
+  const scrollRef = useRef(null);
   return (
     <div id="about" className='container md:mx-auto pt-24 py-10 px-7 md:px-48 md:mt-24'>
         <div>
-          <h1 className='text-green font-league font-black text-4xl md:text-6xl'>Me,<br></br> Myself<br></br> and I</h1>
-          <div className='flex justify-left items-center gap-3 pt-3'>
-              <span className='w-40 h-1 bg-green border-2 border-green'></span>
+
+          <motion.h1 
+            className='text-green font-league font-black text-4xl md:text-6xl'
+            initial={{ opacity: 0,translateY:40 }}
+            whileInView={{ opacity: 1,translateY:0 }}
+            transition = {{duration:0.6}}
+            viewport={{ root: scrollRef,once: true }}
+          >
+            Me,<br></br> Myself<br></br> and I
+          </motion.h1>
+
+          <motion.div 
+            className='flex justify-left items-center gap-3 pt-3'
+            initial={{ opacity: 0,translateY:40 }}
+            whileInView={{ opacity: 1,translateY:0 }}
+            transition = {{duration:0.6}}
+            viewport={{ root: scrollRef,once: true }}
+          >
+              <span className='w-40 h-1 bg-green border-2 border-green'> </span>
               <FaInstagram className='text-2xl text-white' />
               <FaGithub className='text-2xl text-white' />
               <FaLinkedin className='text-2xl text-white' />
-          </div>
-          <div className='md:flex  md:gap-6 mx-auto pt-4'>
-             <p className='text-white opacity-80 pt-6 md:w-1/2  mx-auto text-md font-inter text-white leading-relaxed md:text-lg'>
+          </motion.div>
+          <div className='md:flex pt-4'>
+
+          <div className='md:flex md:flex-col md:gap-6 '>
+             <motion.p 
+              initial={{ opacity: 0,translateY:40 }}
+              whileInView={{ opacity: 1,translateY:0 }}
+              transition = {{duration:0.6}}
+              viewport={{ root: scrollRef,once: true }}
+              className='text-white opacity-80 pt-6 md:w-3/4 text-md font-inter text-white leading-relaxed md:text-lg'>
                 Hello! My name is <span >Abhishek Singh</span>, I&apos;m 20 years old passionate web developer,
                 based in India. I started coding back in my high school. My interest in 
                 web developement came back in 2020.
@@ -23,7 +49,16 @@ const About = () => {
                 along with my studies.
                 <br></br><br></br>
                 Here are some of the technologies that I have worked with &#8212;
-                <div className='tech flex mt-5 mx-8 font-fira text-sm md:text-lg font-regular justify-left items-center gap-14'>
+                
+             </motion.p>
+
+             <motion.div 
+              className=' text-white tech flex mt-5 ml-8 font-mono text-sm md:text-lg font-light justify-left items-center gap-14'
+              initial={{ opacity: 0,translateY:40 }}
+              whileInView={{ opacity: 1,translateY:0 }}
+              transition = {{duration:0.6}}
+              viewport={{ root: scrollRef,once: true }}
+             >
                    <ul>
                      <li>React</li>
                      <li>Next.JS</li>
@@ -34,12 +69,19 @@ const About = () => {
                      <li>Express.JS</li>
                      <li>Figma</li>
                    </ul>
-                </div>
-             </p>
+                
+              </motion.div>
+              </div>
           
-            <div className='mx-auto mt-3 '>
-              <img src={me} alt="me" className='md:w-3/4 myimage' ></img>
-            </div>
+            <motion.div 
+              className='mt-3 md:w-3/4 '
+              initial={{ opacity: 0,translateY:40 }}
+              whileInView={{ opacity: 1,translateY:0 }}
+              transition = {{duration:0.6,delay:0.5}}
+              viewport={{ root: scrollRef,once: true }}
+            >
+              <img src={me} alt="me" className='myimage' ></img>
+            </motion.div>
           </div>
         </div>
     </div>
