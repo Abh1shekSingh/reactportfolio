@@ -27,9 +27,11 @@ const About = () => {
             viewport={{ root: scrollRef,once: true }}
           >
               <span className='w-40 h-1 bg-green border-2 border-green'> </span>
-              <FaInstagram className='text-2xl text-white' />
-              <FaGithub className='text-2xl text-white' />
-              <FaLinkedin className='text-2xl text-white' />
+              <a href="https://www.instagram.com/invites/contact/?i=1mwje5839nx13&utm_content=eeootg6" className='bg-green py-2 px-2 rounded-full'><FaInstagram className='text-2xl text-white' /></a>
+              <a href="https://github.com/Abh1shekSingh"  className='bg-green py-2 px-2 rounded-full'><FaGithub className='text-2xl text-white' /></a>
+              <a href="https://www.linkedin.com/in/abhishek-764a791bb/" className='bg-green py-2 px-2 rounded-full'><FaLinkedin className='text-2xl text-white' /></a>
+              
+                            
           </motion.div>
           <div className='md:flex pt-4'>
 
