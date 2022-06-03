@@ -1,5 +1,6 @@
 import project1 from "../assets/images/Project1.png"
 import project2 from "../assets/images/Project2.png"
+import project3 from "../assets/images/project3.png"
 import work from "../assets/images/Work.png"
 import {FaReact,FaNodeJs, FaFigma} from "react-icons/fa"
 
@@ -32,7 +33,7 @@ export const projects = [
         projectName : 'Code Karo',
         description : "React based web application capabel of providing information of upcoming coding contest on some of the famous coding sites such as — Leetcode, Codeforces, Codechef, AtCoder and etc. ",
         techStack : "React  tailwind CSS Material UI Vs Code API",
-        thumbnail : project1,
+        thumbnail : project3,
         live:"https://codeekaro.netlify.app",
         repo:"https://github.com/Abh1shekSingh/Codekaro"
     },
