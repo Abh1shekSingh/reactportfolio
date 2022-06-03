@@ -24,6 +24,7 @@ const opacity = useTransform(x, [-200, 0, 200], [0, 1, 0])
           >
             
             <SiSnapcraft className='text-green md:text-5xl' />
+            <h1 className='hidden md:block'>&nbsp;abhishek.</h1>
             
           </motion.div>
           <div >
@@ -36,7 +37,7 @@ const opacity = useTransform(x, [-200, 0, 200], [0, 1, 0])
                     transition = {{duration:0.1, delay:0.6}}
 
                   >
-                    About
+                    <span className='font-bold text-light'>01&nbsp; </span>About
                   </motion.li>
                 </a>
                 <a href="#projects">
@@ -45,7 +46,7 @@ const opacity = useTransform(x, [-200, 0, 200], [0, 1, 0])
                     animate = {{translateY: 0, opacity:1}}
                     transition = {{duration:0.2, delay:0.6}}
                   >
-                    Project
+                    <span className='font-bold text-light'>02&nbsp; </span>Project
                   </motion.li>
                 </a>
                 <a href="#contact">
@@ -54,7 +55,7 @@ const opacity = useTransform(x, [-200, 0, 200], [0, 1, 0])
                     animate = {{translateY: 0, opacity:1}}
                     transition = {{duration:0.3, delay:0.6}}
                   >
-                    Contact
+                    <span className='font-bold text-light'>03&nbsp; </span>Contact
                   </motion.li>
                 </a>
              </ul>

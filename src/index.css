@@ -40,3 +40,16 @@ li{
 .gridContainer{
     margin-top: 1em;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-track {
+    background: #BDE6F1; 
+  }
+::-webkit-scrollbar-thumb {
+    background: #65FFBE; 
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: #BDE6F1; 
+  }
