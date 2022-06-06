@@ -13,23 +13,21 @@ const Work = () => {
 
   return (
     <div id="projects" className=' md:mx-auto pt-24 py-10 px-10 md:px-48 md:mt-24'>
-      <div className=''>
-          <motion.h1 
-            initial={{ opacity: 0,translateY:40 }}
-            whileInView={{ opacity: 1,translateY:0 }}
-            transition = {{duration:0.6}}
-            viewport={{ root: scrollRef,once: true }}
+      <motion.div 
+        initial={{ opacity: 0,translateY:40 }}
+        whileInView={{ opacity: 1,translateY:0 }}
+        transition = {{duration:0.6}}
+        viewport={{ root: scrollRef,once: true }}
+      >
+          <h1 
+            
             className='text-green font-league font-black text-4xl md:text-6xl'>
             What I have build
-          </motion.h1>
-          <motion.span 
-            initial={{ opacity: 0,translateY:40 }}
-            whileInView={{ opacity: 1,translateY:0 }}
-            transition = {{duration:0.6}}
-            viewport={{ root: scrollRef,once: true }}
+          </h1>
+          <span 
             className='flex w-40 h-1 my-6 bg-green border-2 border-green'>
-          </motion.span>
-      </div>
+          </span>
+      </motion.div>
       
       <Grid container rowGap={6} columnGap={0} >
       {projects.map((item) =>(

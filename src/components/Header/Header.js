@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <div>
-      <div className='backdrop-blur z-10 text-white shadow-sm py-3 px-5 md:px-32 flex justify-between items-center w-full fixed'>
+      <div className='backdrop-blur z-10 text-white  py-3 px-5 md:px-32 flex justify-between items-center w-full fixed'>
           <motion.div 
             className='flex justify-center items-center gap-1 font-fira md:font-league font-black text-3xl md:text-4xl'
             initial = {{opacity:0}}
