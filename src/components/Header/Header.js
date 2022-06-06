@@ -9,18 +9,15 @@ const Header = () => {
   //   visible: { opacity: 1 },
   // }
 
-  const x = useMotionValue(0)
-const opacity = useTransform(x, [-200, 0, 200], [0, 1, 0])
 
   return (
     <div>
       <div className='backdrop-blur z-10 text-white shadow-sm py-3 px-5 md:px-32 flex justify-between items-center w-full fixed'>
           <motion.div 
             className='flex justify-center items-center gap-1 font-fira md:font-league font-black text-3xl md:text-4xl'
-            drag="x" style={{ x, opacity }} 
             initial = {{opacity:0}}
             animate = {{opacity:1}}
-            transition ={{duration:0.6 , delay:0.2}}
+            transition = {{duration:0.5}}
           >
             
             <SiSnapcraft className='text-green md:text-5xl' />

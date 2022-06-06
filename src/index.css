@@ -20,10 +20,13 @@ li{
 }
 .myimage{
     filter: grayscale(90%);
-    transition:.3s
+    transition:.3s;
+    box-shadow : 15px 15px 0px 0px #fff
 }
 .myimage:hover{
     filter: grayscale(0);
+    box-shadow : 10px 10px 0px 0px #fff
+
 }
 
 .image{
@@ -53,3 +56,5 @@ li{
 ::-webkit-scrollbar-thumb:hover {
     background: #BDE6F1; 
   }
+
+  
