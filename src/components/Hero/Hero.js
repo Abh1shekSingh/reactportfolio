@@ -9,8 +9,8 @@ const Hero = () => {
     <>
       <Header/>
       
-        <div className={`container md:pt-40 pt-20 `}>
-          <div className='py-10 px-10 md:px-48'>
+        
+          <div className='container md:pt-40 flex flex-col justify-center items-left pt-32  px-10 md:px-48'>
 
             <motion.h1 
               className='font-league text-5xl leading-tight font-black text-white md:text-7xl md:leading-tight'
@@ -18,7 +18,7 @@ const Hero = () => {
               animate = {{translateY:0, opacity:1}}
               transition = {{duration:0.5 , delay:1.5}}
             >
-              Hi !<br></br> <span className='text-green'>I'm Abhishek</span> <br></br> <span className='text-light'>I Turn Rasmalai Into Code</span>
+              <span className='text-5xl'>Hi !👋</span><br></br> <span className='text-green'>I'm Abhishek</span> <br></br> <span className='text-light'>I Turn Rasmalai Into Code</span>
             </motion.h1>
 
             <motion.p 
@@ -42,7 +42,7 @@ const Hero = () => {
             </a>
 
           </div>
-        </div>
+       
     </>
   )
 }

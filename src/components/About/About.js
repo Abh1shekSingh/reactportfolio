@@ -76,7 +76,7 @@ const About = () => {
               </div>
           
             <motion.div 
-              className='mt-3 md:w-3/4 '
+              className='mt-3 md:w-7/12 '
               initial={{ opacity: 0,translateY:40 }}
               whileInView={{ opacity: 1,translateY:0 }}
               transition = {{duration:0.6,delay:0.5}}

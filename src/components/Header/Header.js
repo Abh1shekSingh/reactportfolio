@@ -12,23 +12,22 @@ const Header = () => {
 
   return (
     <div>
-      <div className='backdrop-blur z-10 text-white  py-3 px-5 md:px-32 flex justify-between items-center w-full fixed'>
+      <div className='backdrop-blur z-10 text-white  py-3 px-5 md:px-24 md:pt-10 flex justify-between items-center w-full fixed'>
           <motion.div 
-            className='flex justify-center items-center gap-1 font-fira md:font-league font-black text-3xl md:text-4xl'
+            className='flex justify-center items-center gap-1 font-fira md:font-league font-black '
             initial = {{opacity:0}}
             animate = {{opacity:1}}
             transition = {{duration:0.5}}
           >
             
-            <SiSnapcraft className='text-green md:text-5xl' />
-            <h1 className='hidden md:block'>&nbsp;abhishek.</h1>
+            <SiSnapcraft className='text-green text-2xl md:text-3xl' />
             
           </motion.div>
           <div >
              <ul className='font-poppin font-regular flex justify-center items-center gap-3 md:gap-14 '>
                 <a href='#about'>
                   <motion.li 
-                    className='hover:text-green text-md'
+                    className='text-sm'
                     initial = {{translateY:-20, opacity:0}}
                     animate = {{translateY: 0, opacity:1}}
                     transition = {{duration:0.1, delay:0.6}}
@@ -38,7 +37,7 @@ const Header = () => {
                   </motion.li>
                 </a>
                 <a href="#projects">
-                  <motion.li className='hover:text-green text-md'
+                  <motion.li className='text-sm'
                     initial = {{translateY:-20, opacity:0}}
                     animate = {{translateY: 0, opacity:1}}
                     transition = {{duration:0.2, delay:0.6}}
@@ -47,12 +46,12 @@ const Header = () => {
                   </motion.li>
                 </a>
                 <a href="#contact">
-                  <motion.li className='hover:text-green text-md'
+                  <motion.li className='text-sm'
                     initial = {{translateY:-20, opacity:0}}
                     animate = {{translateY: 0, opacity:1}}
                     transition = {{duration:0.3, delay:0.6}}
                   >
-                    <span className='font-bold text-light'>03&nbsp; </span>Contact
+                    <span className='font-bold text-light '>03&nbsp; </span>Contact
                   </motion.li>
                 </a>
              </ul>
