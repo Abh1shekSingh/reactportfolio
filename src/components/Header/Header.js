@@ -1,7 +1,7 @@
 import React from 'react'
 // import logo from "../../assets/images/Logo.png"
 import {SiSnapcraft} from "react-icons/si"
-import { motion,useMotionValue,useTransform } from "framer-motion"
+import { motion} from "framer-motion"
 const Header = () => {
 
   // const variants = {
