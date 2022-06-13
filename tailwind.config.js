@@ -9,7 +9,9 @@ module.exports = {
       'fira': ['Fira Code', 'monospace'], // Ensure fonts with spaces have " " surrounding it.
       'inter': ['Inter', 'sans-serif'],
       'poppin': ['Poppins', 'sans-serif'],
-      'mono':['Jetbrains Mono','monospace']
+      'mono':['Jetbrains Mono','monospace'],
+      'pacifico':['Pacifico', 'cursive'],
+      'kaushan':['Kaushan Script', 'cursive']
     },
     colors: {
       'green' : '#65FFBE',
