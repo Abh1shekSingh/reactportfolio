@@ -11,8 +11,8 @@ const Hero = () => {
           animate = {{translateY:0, opacity:1}}
           transition = {{duration:0.5 , delay:1.5}}
         >
-          <span className='font-league text-xl text-green leading-loose'>👋 Hi, my name is</span><br></br><br></br>
-          <span className='font-black font-league text-4xl md:text-7xl text-light leading-normal'>Abhishek Singh.</span><br></br><br></br>
+          <span className='font-league text-xl text-green leading-loose'>👋 Hi, my name is</span><br></br><span className='hidden md:block'><br></br></span>
+          <span className='font-black font-league text-4xl md:text-7xl text-light leading-normal'>Abhishek Singh.</span><br></br><span className='hidden md:block'><br></br></span>
           <span className='font-black font-league text-4xl md:text-7xl text-light opacity-80 leading-tightest'>I Turn Rasmalai into Code.</span>
         </motion.h1>
 
