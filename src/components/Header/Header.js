@@ -17,17 +17,17 @@ const Header = () => {
   }
 
   return (
-    <Box className='flex justify-between py-4 px-14'>
+    <Box className='flex justify-between py-4 px-6 md:px-14'>
       <Box>
         <SiSnapcraft className='text-green text-4xl'  />
       </Box>
       <Box className='flex justify-center items-center gap-6'>
         <Box className='hidden md:block text-white'>
-          <ul className='flex justify-center items-center gap-6 font-poppin font-semibold cursor-pointer'>
-            <a href='/'><li>Home</li></a>
-            <a href='#about'><li>About</li></a>
-            <a href="#projects"><li>Projects</li></a>
-            <a href='#contact'><li>Contact</li></a>
+          <ul className='flex justify-center items-center gap-6 tracking-wide font-poppin font-medium cursor-pointer'>
+            <a href='/'><li >Home</li></a>
+            <a href='#about'><li >About</li></a>
+            <a href="#projects"><li >Projects</li></a>
+            <a href='#contact'><li >Contact</li></a>
           </ul>
         </Box>
         <Box className="switch" data-isOn={isOn} onClick={toggleSwitch}>
