@@ -19,7 +19,9 @@ module.exports = {
       'white' : '#fff',
       'orange' : "#ffdc00",
       'subtext' : "#fdfdfd",
-      'light': "#BDE6F1"
+      'light': "#BDE6F1",
+      'linkdin': "#00a0dc",
+      'instagram': "#e1306c"
     }
   },
   plugins: [],

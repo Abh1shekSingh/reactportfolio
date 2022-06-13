@@ -23,11 +23,10 @@ li{
 .myimage{
     filter: grayscale(90%);
     transition:.3s;
-    box-shadow : 15px 15px 0px 0px #fff
+    border-radius: 10px;
 }
 .myimage:hover{
     filter: grayscale(0);
-    box-shadow : 10px 10px 0px 0px #fff
 
 }
 
