@@ -24,13 +24,13 @@ const Hero = () => {
         >
           I&apos;m 3<sup>rd</sup> year computer science undergrad at 
           Chandigarh University, India. Currently I&apos;m React JS Developer intern at
-          <a href='https://stakemen.com' className='text-green'> stakesmen</a>.
+          <a href='https://stakesmen.com' className='text-green'> stakesmen</a>.
 
         </motion.p>
 
-        <a href='https://drive.google.com/file/d/1tqRMCQP1My5vcowOWVNSzGXqWOsSGRB1/view?usp=sharing'>
+        <a href='https://drive.google.com/file/d/1tqRMCQP1My5vcowOWVNSzGXqWOsSGRB1/view?usp=sharing' className='mt-6 bg-orange w-0'>
           <motion.button 
-            className='transtition duration-300 bg-transparent mt-6 hover:bg-green text-xl text-white font-fira font-medium py-2 px-6 border border-green hover:border-transparent md:text-sm md:mt-6 md:px-11 md:py-3'
+            className='transtition duration-300 bg-transparent hover:bg-green text-xl text-white font-poppin font-medium border border-green hover:border-transparent md:text-sm  md:px-11 md:py-3'
             initial = {{translateY:20, opacity:0}}
             animate = {{translateY:0, opacity:1}}
             transition = {{duration:0.1 , delay:1.7}}

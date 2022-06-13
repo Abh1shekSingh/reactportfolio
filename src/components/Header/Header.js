@@ -3,6 +3,9 @@ import { Box } from '@material-ui/core'
 import {SiSnapcraft} from "react-icons/si"
 import { motion} from "framer-motion"
 import HeaderDrawer from './HeaderDrawer'
+import {GoHome} from "react-icons/go"
+import {BsPencil,BsPhone} from "react-icons/bs"
+import {HiOutlineStar} from "react-icons/hi"
 const Header = () => {
   const spring = {
     type: "spring",
@@ -22,12 +25,12 @@ const Header = () => {
         <SiSnapcraft className='text-green text-4xl'  />
       </Box>
       <Box className='flex justify-center items-center gap-6'>
-        <Box className='hidden md:block text-white'>
+        <Box className='hidden md:block text-subtext'>
           <ul className='flex justify-center items-center gap-6 tracking-wide font-poppin font-medium cursor-pointer'>
-            <a href='/'><li >Home</li></a>
-            <a href='#about'><li >About</li></a>
-            <a href="#projects"><li >Projects</li></a>
-            <a href='#contact'><li >Contact</li></a>
+            <a href='/'><li className='flex justify-center items-center gap-2'><GoHome />Home</li></a>
+            <a href='#about'><li className='flex justify-center items-center gap-2'><BsPencil />About</li></a>
+            <a href="#projects"><li className='flex justify-center items-center gap-2'><HiOutlineStar />Projects</li></a>
+            <a href='#contact'><li className='flex justify-center items-center gap-2'><BsPhone />Contact</li></a>
           </ul>
         </Box>
         <Box className="switch" data-isOn={isOn} onClick={toggleSwitch}>
