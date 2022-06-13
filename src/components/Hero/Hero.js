@@ -30,7 +30,7 @@ const Hero = () => {
 
         <a href='https://drive.google.com/file/d/1tqRMCQP1My5vcowOWVNSzGXqWOsSGRB1/view?usp=sharing' className='mt-6 bg-orange w-0'>
           <motion.button 
-            className='transtition duration-300 bg-transparent hover:bg-green text-xl text-white font-poppin font-medium border border-green hover:border-transparent md:text-sm  md:px-11 md:py-3'
+            className='transtition duration-300 bg-transparent hover:bg-green text-white font-poppin font-medium border border-green hover:border-transparent md:text-sm px-11 py-3 text-sm md:px-11 md:py-3'
             initial = {{translateY:20, opacity:0}}
             animate = {{translateY:0, opacity:1}}
             transition = {{duration:0.1 , delay:1.7}}
