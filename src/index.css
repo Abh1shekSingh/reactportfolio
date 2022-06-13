@@ -23,11 +23,13 @@ li{
 .myimage{
     filter: grayscale(90%);
     transition:.3s;
-    border-radius: 10px;
+    border: 1px solid white;
+    width: 35%;
+    height: 35%;
+    box-shadow: 8px 8px 0px 0px rgb(255, 255, 255);
 }
 .myimage:hover{
     filter: grayscale(0);
-
 }
 
 .image{
@@ -78,5 +80,13 @@ li{
     height: 20px;
     background-color: white;
     border-radius: 40px;
+  }
+
+  @media only screen and (max-width:786px){
+    .myimage{
+        width:70%;
+        margin: 2em auto;
+        height:100%;
+    }
   }
   

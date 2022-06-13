@@ -7,10 +7,10 @@ import { motion } from 'framer-motion'
 const About = () => {
   const scrollRef = useRef(null);
   const DOB = (new Date().getFullYear()) -2002
-  console.log(DOB)
+
   return (
-    <Box id="about" className='container md:mx-auto pt-24 py-10 px-7 md:px-48 md:mt-24'>
-      <Box>
+    <Box id="about" className='flex justify-center items-center'>
+      <Box  className='flex flex-col mt-44 px-4 md:px-72 md:mt-56'>
         <motion.h1 
           className='text-green font-league font-black text-4xl md:text-6xl'
           initial={{ opacity: 0,translateY:40 }}
@@ -22,7 +22,7 @@ const About = () => {
         </motion.h1>
 
         <motion.div 
-          className='flex justify-left items-center gap-3 pt-3'
+          className='flex pt-3'
           initial={{ opacity: 0,translateY:40 }}
           whileInView={{ opacity: 1,translateY:0 }}
           transition = {{duration:0.6}}
@@ -35,13 +35,13 @@ const About = () => {
         </motion.div>
         
         <Box className='md:flex pt-4'>
-          <Box className='md:flex md:flex-col md:gap-6 '>
+          <Box className='md:flex md:flex-col'>
             <motion.p 
               initial={{ opacity: 0,translateY:40 }}
               whileInView={{ opacity: 1,translateY:0 }}
               transition = {{duration:0.6}}
               viewport={{ root: scrollRef,once: true }}
-              className='text-white opacity-80 pt-6 md:w-3/4 text-md font-poppin text-white leading-relaxed md:text-lg'>
+              className='text-white opacity-80 pt-6 md:w-11/12 text-md font-poppin text-white leading-relaxed md:text-md'>
                 Hello! (ਸਤ ਸ੍ਰੀ ਅਕਾਲ) my name is <span className='text-green'>Abhishek Singh</span>, I&apos;m {DOB} years old passionate web developer,
                 based in Punjab, India. I enjoy bulding stuff for the web. In my high school I learned C++ which build 
                 my interest in coding. Later, When I got into university, I started learning making website
@@ -75,15 +75,15 @@ const About = () => {
               </motion.div>
             </Box>
           
-            <motion.div 
-              className='mt-7 md:w-7/12 '
+            {/* <motion.div 
+              className='mt-7'
               initial={{ opacity: 0,translateY:40 }}
               whileInView={{ opacity: 1,translateY:0 }}
               transition = {{duration:0.6,delay:0.5}}
               viewport={{ root: scrollRef,once: true }}
-            >
-              <img src={me} alt="me" className='myimage' ></img>
-            </motion.div>
+            > */}
+              <img src={me} alt="me" className='myimage'></img>
+            {/* </motion.div> */}
         </Box>
       </Box>
     </Box>
