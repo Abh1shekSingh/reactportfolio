@@ -1,5 +1,5 @@
 import React,{useRef} from 'react'
-import {FaInstagram, FaGithub, FaLinkedin} from "react-icons/fa"
+// import {FaInstagram, FaGithub, FaLinkedin} from "react-icons/fa"
 import {Box} from "@material-ui/core"
 import me from "../../assets/images/Me.png"
 import { motion } from 'framer-motion'
