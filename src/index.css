@@ -86,5 +86,13 @@ li{
     background-color: #242629 !important;
   }
 
-  
+  .tab{
+    color: white !important;
+    font-family: 'Poppins' !important;
+    border: 1px solid #7f5af0 !important;
+    margin-right: 1em !important;
+    transition: 0.5s !important;
+    border-radius: 10px !important;
+    background-color: #7f5af0 !important;
+  }
   

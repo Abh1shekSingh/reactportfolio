@@ -82,7 +82,7 @@ const About = () => {
               transition = {{duration:0.6,delay:0.5}}
               viewport={{ root: scrollRef,once: true }}
             > */}
-              <motion.img initial={{opacity:0, translateX:100}} whileInView={{opacity:1, translateX:0}} transition={{duration:0.6, type:"spring",stiffness: 100}} viewport={{ root: scrollRef,once: true }} src={me} alt="me" className='myimage'></motion.img>
+              <motion.img initial={{opacity:0, translateX:-100}} whileInView={{opacity:1, translateX:0}} transition={{duration:0.6, type:"spring",stiffness: 100}} viewport={{ root: scrollRef,once: true }} src={me} alt="me" className='myimage'></motion.img>
             {/* </motion.div> */}
         </Box>
       </Box>
