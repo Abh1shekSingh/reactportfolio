@@ -10,7 +10,7 @@ const About = () => {
 
   return (
     <Box id="about" className='flex justify-center items-center bg-lightDark'>
-      <Box  className='flex flex-col md:mt-16  mt-20 pb-20 px-4 md:px-72'>
+      <Box  className='flex flex-col md:mt-16 md:pb-32 mt-20 pb-20 px-4 md:px-72'>
         <motion.h1 
           className='text-white font-league font-black text-4xl md:text-6xl'
           initial={{ opacity: 0,translateY:40 }}
@@ -82,7 +82,7 @@ const About = () => {
               transition = {{duration:0.6,delay:0.5}}
               viewport={{ root: scrollRef,once: true }}
             > */}
-              <img src={me} alt="me" className='myimage'></img>
+              <motion.img initial={{opacity:0, translateX:100}} whileInView={{opacity:1, translateX:0}} transition={{duration:0.6, type:"spring",stiffness: 100}} viewport={{ root: scrollRef,once: true }} src={me} alt="me" className='myimage'></motion.img>
             {/* </motion.div> */}
         </Box>
       </Box>

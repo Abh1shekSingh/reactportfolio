@@ -6,8 +6,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import {FiGithub, FiExternalLink} from "react-icons/fi"
 import {projects} from "../../constant/constant"
-
 import {motion} from 'framer-motion'
+
 const Work = () => {
   const scrollRef = useRef(null);
 
@@ -33,10 +33,11 @@ const Work = () => {
       {projects.map((item) =>(
         <Grid  item md={6} xs={12} sm={6} className="GridItem">
         <motion.div 
-          initial={{ opacity: 0,translateY:40 }}
-            whileInView={{ opacity: 1,translateY:0 }}
+          initial={{ opacity: 0,translateX:100 }}
+            whileInView={{ opacity: 1,translateX:0 }}
             transition = {{duration:0.6}}
             viewport={{ root: scrollRef,once: true }}
+           
         >
           <Card  sx={{ maxWidth: 400 }} className='project-cards'>
             <CardMedia

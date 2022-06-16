@@ -6,6 +6,7 @@ import HeaderDrawer from './HeaderDrawer'
 import {GoHome} from "react-icons/go"
 import {BsPencil,BsPhone} from "react-icons/bs"
 import {HiOutlineStar} from "react-icons/hi"
+
 const Header = () => {
   const spring = {
     type: "spring",
@@ -22,15 +23,15 @@ const Header = () => {
   return (
     <Box className='flex justify-between py-4 px-6 md:px-14 bg-dark'>
       <Box>
-        <SiSnapcraft className='text-purple text-5xl'  />
+        <motion.a initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.5}} href='https://craftingbugs.tech'><SiSnapcraft className='cursor-pointer text-purple text-5xl'  /></motion.a>
       </Box>
       <Box className='flex justify-center items-center gap-6'>
         <Box className='hidden md:block text-subtext'>
           <ul className='flex justify-center items-center gap-6 tracking-wide font-poppin font-medium cursor-pointer'>
-            <a href='/'><li className='flex justify-center items-center gap-2'><GoHome />Home</li></a>
-            <a href='#about'><li className='flex justify-center items-center gap-2'><BsPencil />About</li></a>
-            <a href="#projects"><li className='flex justify-center items-center gap-2'><HiOutlineStar />Projects</li></a>
-            <a href='#contact'><li className='flex justify-center items-center gap-2'><BsPhone />Contact</li></a>
+            <motion.a initial={{opacity:0, translateY:-20}} animate={{opacity:1, translateY:0}} transition={{duration:0.3, delay:0.5}} href='/'><li className='flex justify-center items-center gap-2'><GoHome />Home</li></motion.a>
+            <motion.a initial={{opacity:0, translateY:-20}} animate={{opacity:1, translateY:0}} transition={{duration:0.3, delay:0.6}} href='#about'><li className='flex justify-center items-center gap-2'><BsPencil />About</li></motion.a>
+            <motion.a initial={{opacity:0, translateY:-20}} animate={{opacity:1, translateY:0}} transition={{duration:0.3, delay:0.7}} href="#projects"><li className='flex justify-center items-center gap-2'><HiOutlineStar />Projects</li></motion.a>
+            <motion.a initial={{opacity:0, translateY:-20}} animate={{opacity:1, translateY:0}} transition={{duration:0.3, delay:0.8}} href='#contact'><li className='flex justify-center items-center gap-2'><BsPhone />Contact</li></motion.a>
           </ul>
         </Box>
         <Box className="switch" data-isOn={isOn} onClick={toggleSwitch}>
