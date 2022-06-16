@@ -4,7 +4,7 @@ import { Box } from '@mui/material'
 const Hero = () => {
 
   return (
-    <Box className='flex justify-center items-center bg-dark w-full md:h-screen  md:pb-32 py-10 pb-20 '>
+    <Box className='flex justify-center items-center bg-dark w-full md:h-screen h-screen  md:pb-32 py-10 pb-20 '>
       <Box className='flex flex-col px-4 '>
         <motion.h1 
           initial = {{translateY:20, opacity:0}}
