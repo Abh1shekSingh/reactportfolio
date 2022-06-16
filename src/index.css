@@ -10,6 +10,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 body.disable-scroll{
     overflow: hidden;
 }
@@ -17,9 +18,7 @@ body.disable-scroll{
 li{
     transition: .3s;
 }
-.Hero{
-    filter: blur(5px);
-}
+
 .myimage{
     filter: grayscale(90%);
     transition:.3s;
@@ -88,5 +87,15 @@ li{
         margin: 2em auto;
         height:100%;
     }
+  }
+
+  .techCards{
+    background-color: #16161a !important;
+    max-width: 100%;
+    min-height: 250px;
+  }
+
+  .project-cards{
+    background-color: #242629 !important;
   }
   

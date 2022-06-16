@@ -9,10 +9,10 @@ const About = () => {
   const DOB = (new Date().getFullYear()) -2002
 
   return (
-    <Box id="about" className='flex justify-center items-center'>
-      <Box  className='flex flex-col mt-44 px-4 md:px-72 md:mt-56'>
+    <Box id="about" className='flex justify-center items-center bg-lightDark'>
+      <Box  className='flex flex-col md:mt-16  mt-20 pb-20 px-4 md:px-72'>
         <motion.h1 
-          className='text-green font-league font-black text-4xl md:text-6xl'
+          className='text-white font-league font-black text-4xl md:text-6xl'
           initial={{ opacity: 0,translateY:40 }}
           whileInView={{ opacity: 1,translateY:0 }}
           transition = {{duration:0.6}}
@@ -28,7 +28,7 @@ const About = () => {
           transition = {{duration:0.6}}
           viewport={{ root: scrollRef,once: true }}
         >
-          <span className='w-40 h-1 bg-green border-2 border-green'> </span>
+          <span className='w-40 h-1 bg-white border-2 border-white'> </span>
           {/* <a href="https://www.instagram.com/invites/contact/?i=1mwje5839nx13&utm_content=eeootg6" className=' rounded-full'><FaInstagram className='text-2xl text-instagram' /></a>
           <a href="https://github.com/Abh1shekSingh"  className=' rounded-full'><FaGithub className='text-2xl text-green' /></a>
           <a href="https://www.linkedin.com/in/abhishek-764a791bb/" className='rounded-full'><FaLinkedin className='text-2xl text-linkdin' /></a> */}
@@ -41,11 +41,11 @@ const About = () => {
               whileInView={{ opacity: 1,translateY:0 }}
               transition = {{duration:0.6}}
               viewport={{ root: scrollRef,once: true }}
-              className='text-white opacity-80 pt-6 md:w-11/12 text-md font-poppin text-white leading-relaxed md:text-md'>
-                Hello! (ਸਤ ਸ੍ਰੀ ਅਕਾਲ) my name is <span className='text-green'>Abhishek Singh</span>, I&apos;m {DOB} years old passionate web developer,
+              className='text-paragraph opacity-80 pt-6 md:w-11/12 text-md font-poppin leading-relaxed md:text-md'>
+                Hello! (ਸਤ ਸ੍ਰੀ ਅਕਾਲ) my name is <span className='text-paragraph font-black'>Abhishek Singh</span>, I&apos;m {DOB} years old passionate web developer,
                 based in Punjab, India. I enjoy bulding stuff for the web. In my high school I learned C++ which build 
                 my interest in coding. Later, When I got into university, I started learning making website
-                out of my interest and ended up making some cool <span className='text-green'>front-end</span> as well as <span className='text-green'>full-stack</span> Web applications 
+                out of my interest and ended up making some cool <span className='text-paragraph font-black'>front-end</span> as well as <span className='text-paragraph font-black'>full-stack</span> Web applications 
                 <br></br><br></br>
                 Fast forwarding to today, I have developed really lovely side 
                 projects which have taught me and let me learn new technologies with time, 
@@ -55,7 +55,7 @@ const About = () => {
             </motion.p>
 
             <motion.div 
-              className=' text-white tech flex mt-5 ml-8 font-mono text-sm md:text-lg font-light justify-left items-center gap-14'
+              className=' text-paragraph tech flex mt-5 ml-8 font-mono text-sm md:text-lg font-light justify-left items-center gap-14'
               initial={{ opacity: 0,translateY:40 }}
               whileInView={{ opacity: 1,translateY:0 }}
               transition = {{duration:0.6}}

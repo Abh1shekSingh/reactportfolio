@@ -1,8 +1,11 @@
 import project1 from "../assets/images/Project1.png"
 import project2 from "../assets/images/Project2.png"
 import project3 from "../assets/images/project3.png"
+import nodejs from "../assets/images/nodejs.png"
+import react from "../assets/images/react.png"
+import figma from "../assets/images/figma.png"
 import work from "../assets/images/Work.png"
-import {FaReact,FaNodeJs, FaFigma} from "react-icons/fa"
+// import {FaReact,FaNodeJs, FaFigma} from "react-icons/fa"
 
 export const projects = [
     {
@@ -42,19 +45,19 @@ export const projects = [
 
 export const technologies = [
     {
-        phase: "Front-End",
-        logo: <FaReact className="text-2xl text-dark" />,
-        description: "I ❤️ carving my frontend using React itself along with tailwind CSS. Sometimes, I also use Material UI to render clean components."
+        phase: "Front End Technology",
+        logo:react,
+        description: "Mostly, I build my apps using React JS only. But, I am always open to change, so, their are some other technolgies too which I use to develop my beautiful frontend UI such as - ViteJs and NextJs."
     },
     {
-        phase: "Back-End",
-        logo: <FaNodeJs className="text-2xl text-dark" />,
-        description: "Experience with NodeJS for managing the backend of applications. Manage database with help of mongo DB / firebase."
+        phase: "Back End Technology",
+        logo:nodejs,
+        description: "For the backend part of the application I have experience with using Nodejs along with MongoDB as the database for creating schemas. I have also worked with Firebase."
     },
     {
-        phase: "Designing",
-        logo: <FaFigma className="text-2xl text-dark" />,
-        description: "Before developing my web apps, I ❤️ to design them first, for that I use figma tool."
+        phase: "Designing Tool",
+        logo:figma,
+        description: "Being Front End Developer, to me UI is what all matters. So, for that I use Figma which allow me to easily create the UI design of the app before actual building process."
     }
 ]
 

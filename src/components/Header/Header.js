@@ -20,9 +20,9 @@ const Header = () => {
   }
 
   return (
-    <Box className='flex justify-between py-4 px-6 md:px-14'>
+    <Box className='flex justify-between py-4 px-6 md:px-14 bg-dark'>
       <Box>
-        <SiSnapcraft className='text-green text-4xl'  />
+        <SiSnapcraft className='text-purple text-5xl'  />
       </Box>
       <Box className='flex justify-center items-center gap-6'>
         <Box className='hidden md:block text-subtext'>

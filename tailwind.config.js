@@ -15,10 +15,15 @@ module.exports = {
     },
     colors: {
       'green' : '#65FFBE',
-      'dark' : '#1d1d1d',
-      'white' : '#fff',
-      'orange' : "#ffdc00",
+      'dark' : '#16161a',
+      'lightDark':"#242629",
+      'purple':'#7f5af0',
+      'paragraph':"#94a1b2",
+      'black':"#000",
+      'white' : '#fffffe',
+      'orange' : "#ff8906",
       'subtext' : "#fdfdfd",
+      'subheadline':"#2e2f3e",
       'light': "#BDE6F1",
       'linkdin': "#00a0dc",
       'instagram': "#e1306c"
