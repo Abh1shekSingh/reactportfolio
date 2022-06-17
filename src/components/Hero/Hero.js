@@ -4,7 +4,7 @@ import { Box } from '@mui/material'
 const Hero = () => {
 
   return (
-    <Box className='flex justify-center items-center bg-dark w-full md:h-screen  md:pb-32 py-10 pb-32 '>
+    <Box className='flex  h-screen bg-dark w-full md:h-screen  md:pb-32 py-10  '>
       <Box className='flex flex-col px-4 '>
         <motion.h1 
           initial = {{translateY:20, opacity:0}}
@@ -23,8 +23,8 @@ const Hero = () => {
           transition = {{duration:0.2 , delay:1.6}}
         >
           I&apos;m 3<sup>rd</sup> year computer science undergrad at 
-          Chandigarh University, India. Currently I&apos;m React JS Developer intern at
-          <a href='https://stakesmen.com' className='text-purple'> stakesmen</a>.
+          Chandigarh University, India and a passionate web developer currently working as React JS Developer intern at
+          <a href='https://stakesmen.com' className='text-purple'> Stakesmen</a>.
 
         </motion.p>
 
