@@ -34,9 +34,9 @@ const Header = () => {
             <motion.a initial={{opacity:0, translateY:-20}} animate={{opacity:1, translateY:0}} transition={{duration:0.3, delay:0.8}} href='#contact'><li className='flex justify-center items-center gap-2'><BsPhone />Contact</li></motion.a>
           </ul>
         </Box>
-        <Box className="switch" data-isOn={isOn} onClick={toggleSwitch}>
+        {/* <Box className="switch" data-isOn={isOn} onClick={toggleSwitch}>
           <motion.div className="handle" layout transition={spring} />
-        </Box>
+        </Box> */}
       </Box>
       <HeaderDrawer />
     </Box>
