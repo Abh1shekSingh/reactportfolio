@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Box } from '@material-ui/core'
 import {SiSnapcraft} from "react-icons/si"
 import { motion} from "framer-motion"
@@ -8,17 +8,17 @@ import {BsPencil,BsPhone} from "react-icons/bs"
 import {HiOutlineStar} from "react-icons/hi"
 
 const Header = () => {
-  const spring = {
-    type: "spring",
-    stiffness: 700,
-    damping: 30
-  };
+  // const spring = {
+  //   type: "spring",
+  //   stiffness: 700,
+  //   damping: 30
+  // };
 
-  const [isOn,setIsOn] = useState(false);
+  // const [isOn,setIsOn] = useState(false);
 
-  const toggleSwitch = () => {
-      setIsOn(!isOn);
-  }
+  // const toggleSwitch = () => {
+  //     setIsOn(!isOn);
+  // }
 
   return (
     <Box className='flex justify-between py-4 px-6 md:px-14 bg-dark'>
